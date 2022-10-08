@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://unpkg.com/three/build/three.min.js"></script>
+    <script src="./tween.js"></script>
+    <title>Game-Screen</title>
+</head>
+<body>
+    <div id="canvas">
+
+    </div> 
+    <div class="menu">
+        <span id="heading">Customize Character</span>
+        <div class = "menu-container">
+            <button id="play" class="menu-selector">
+                <span>PLAY</span>
+            </button>
+            <button id="toggle" class="menu-selector">
+                <span>TOGGLE ANGLE 1</span>
+            </button>
+            <button id="toggle1" class="menu-selector">
+                <span>TOGGLE ANGLE 2</span>
+            </button>
+            <button id="toggle2" class="menu-selector">
+                <span>SOUND</span>
+            </button>
+        </div>
+
+    </div>
+    <script type="module">
+        import { Screen } from './script.js';
+        document.addEventListener('DOMContentLoaded', function(){ const app = new Screen(); window.app = app; });
+    </script>
+</body>
+</html>
